@@ -1,0 +1,33 @@
+{
+  "name": "microsoft-generative-ai-for-beginners-persian",
+  "version": "1.0.0",
+  "description": "کتاب الکترونیکی فارسی دوره هوش مصنوعی مولد مایکروسافت (Generative AI for Beginners) همراه با PDF مهندسی‌شده، بوکمارک‌های تعاملی، کدهای QR و راهنمای اجرای محلی Ollama",
+  "main": "scripts/generate_pdf.js",
+  "scripts": {
+    "setup:repo": "git clone https://github.com/microsoft/generative-ai-for-beginners.git repo",
+    "build:html": "python scripts/build_book.py",
+    "build:pdf": "node scripts/generate_pdf.js",
+    "build:bookmarks": "python scripts/add_bookmarks.py",
+    "build": "npm run build:html && npm run build:pdf && npm run build:bookmarks"
+  },
+  "keywords": [
+    "generative-ai",
+    "microsoft",
+    "ai-for-beginners",
+    "persian",
+    "farsi",
+    "pdf-book",
+    "ollama",
+    "llm",
+    "prompt-engineering",
+    "rag",
+    "agents"
+  ],
+  "author": "مهدی حیدرپور (https://mahdi-hp.ir/)",
+  "homepage": "https://mahdi-hp.ir/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MahdiHpg/microsoft-generative-ai-for-beginners-fa"
+  },
+  "license": "MIT"
+}

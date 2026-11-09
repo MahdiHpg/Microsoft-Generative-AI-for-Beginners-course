@@ -1,0 +1,48 @@
+# ==========================================
+# Git Ignore Configuration
+# Microsoft Generative AI for Beginners (FA)
+# ==========================================
+
+# Upstream Microsoft Source Repository (cloned separately)
+/repo/
+
+# Intermediate Build Artifacts
+/book.html
+*.tmp
+*.temp
+temp_*
+.active_pdf.txt
+test_page*.png
+*.log
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Agent & Personal Rules
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.cursorrules
+.windsurfrules
+
+# OS & Editor Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
